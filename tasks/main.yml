@@ -1,0 +1,8 @@
+---
+
+- name: Install api
+  synchronize:
+    src: "files/{{ nginx_root_dir }}/"
+    dest: "{{ nginx_root_dir }}/"
+  tags:
+   - api
